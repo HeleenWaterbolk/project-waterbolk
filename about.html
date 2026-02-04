@@ -1,1 +1,110 @@
-hierin komen teksten en images
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Heleen Waterbolk</title>
+    <style>
+        body {
+            /* De achtergrond blijft hetzelfde voor consistentie */
+            background-image: url('car.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #000;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.75); /* Donkere waas voor leesbaarheid */
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 10px;
+        }
+
+        .profile-text {
+            font-size: 1.1em;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #ccc;
+            text-decoration: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="theorie/theorie.html">THEORIE</a></li>
+            <li><a href="beweging/beweging.html">BEWEGING</a></li>
+            <li><a href="zwerftocht/zwerftocht.html">ZWERFTOCHT</a></li>
+            <li><a href="mengsel/mengsel.html">MENGSEL</a></li>
+            <li><a href="waarneming/waarneming.html">WAARNEMING</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h1>Over Heleen Waterbolk</h1>
+        
+        <div class="profile-text">
+            <p>
+                Heleen Waterbolk is een autonoom beeldend kunstenaar die zich begeeft op het snijvlak van digitale techniek, waarneming en abstracte beweging. 
+            </p>
+            
+            <h2>Onderzoek naar Beweging</h2>
+            <p>
+                Centraal in haar werk staat de fascinatie voor 'zuivere beweging'. Haar projecten, zoals de <i>Scores</i>, onderzoeken hoe beeld en geluid zich tot elkaar verhouden en hoe intervallen de ervaring van tijd bepalen. Door gebruik te maken van digitale notaties en pixels, vertaalt zij complexe ritmes naar kristallijne variaties en visuele composities.
+            </p>
+
+            <h2>De Blik en de Duur</h2>
+            <p>
+                In haar recente werk (2025-2026) onderzoekt zij de hypothese dat 'duur' een vergelijkbare functie heeft als de sluiter van een camera: het matigt de beweging en maakt het licht hanteerbaar voor de menselijke blik. Haar werk nodigt de toeschouwer uit om stil te staan bij de materialiteit van het symbool en de dieptepeilingen van de 'playhead' in onze moderne visuele cultuur.
+            </p>
+
+            <p><i>Haar werk is regelmatig te zien in exposities waarin de dialoog tussen techniek en de menselijke waarneming centraal staat.</i></p>
+        </div>
+
+        <a href="index.html" class="back-link">← Terug naar de hoofdpagina</a>
+    </div>
+
+</body>
+</html>
