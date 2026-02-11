@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Waterbolk</title>
+    <style>
+        /* Basis instellingen voor de pagina */
+        body {
+            background-color: #000; /* Zwart zoals je aangaf */
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* De container die de drie kolommen vasthoudt */
+        .main-container {
+            display: flex;
+            align-items: center; /* Zorgt dat tekst en beeld verticaal uitgelijnd zijn */
+            justify-content: center;
+            gap: 20px; /* Ruimte tussen de kaders en de afbeelding */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Instellingen voor de tekstkaders */
+        .text-box {
+            flex: 1; /* Zorgt dat beide tekstkaders even breed zijn */
+            border: 1px solid #555; /* Een subtiel lijntje eromheen */
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Licht transparante achtergrond */
+            min-height: 200px;
+        }
+
+        /* Instellingen voor de afbeelding */
+        .image-container img {
+            max-width: 400px; /* Pas dit aan naar de gewenste grootte */
+            height: auto;
+            display: block;
+        }
+
+        /* Mobiele weergave: alles onder elkaar op kleine schermen */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .image-container img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="text-box">
+            <h3>Linker Kolom</h3>
+            <p>Hier kun je je eerste tekst invullen. Bijvoorbeeld over de analoge aspecten van je werk.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="europa.jpg" alt="Europa afbeelding">
+        </div>
+
+        <div class="text-box">
+            <h3>Rechter Kolom</h3>
+            <p>Hier kun je je tweede tekst invullen. Bijvoorbeeld over de digitale processen of frequenties.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
