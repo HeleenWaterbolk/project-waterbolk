@@ -5,68 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Waterbolk</title>
     <style>
-        /* Basis instellingen voor de pagina */
         body {
-            background-color: #000; /* Zwart zoals je aangaf */
+            background-color: #000;
             color: white;
             font-family: sans-serif;
             margin: 0;
-            padding: 20px;
         }
 
-        /* De container die de drie kolommen vasthoudt */
-        .main-container {
+        /* HET NAVIGATIEMENU (voeg hier je eigen styling toe als dit anders was) */
+        nav {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* DE LAYOUT VOOR DE CONTENT */
+        .content-wrapper {
             display: flex;
-            align-items: center; /* Zorgt dat tekst en beeld verticaal uitgelijnd zijn */
+            align-items: flex-start;
             justify-content: center;
-            gap: 20px; /* Ruimte tussen de kaders en de afbeelding */
+            gap: 30px;
+            padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* Instellingen voor de tekstkaders */
         .text-box {
-            flex: 1; /* Zorgt dat beide tekstkaders even breed zijn */
-            border: 1px solid #555; /* Een subtiel lijntje eromheen */
-            padding: 15px;
-            background-color: rgba(255, 255, 255, 0.1); /* Licht transparante achtergrond */
-            min-height: 200px;
+            flex: 1;
+            line-height: 1.6;
         }
 
-        /* Instellingen voor de afbeelding */
+        .image-container {
+            flex: 0 0 auto; /* Zorgt dat de afbeelding niet wordt samengedrukt */
+        }
+
         .image-container img {
-            max-width: 400px; /* Pas dit aan naar de gewenste grootte */
+            max-width: 450px; /* Pas dit aan naar de grootte van je afbeelding */
             height: auto;
-            display: block;
+            border: 1px solid #333; /* Optioneel: een randje om de witte afbeelding */
         }
 
-        /* Mobiele weergave: alles onder elkaar op kleine schermen */
-        @media (max-width: 768px) {
-            .main-container {
+        /* Mobiele weergave */
+        @media (max-width: 900px) {
+            .content-wrapper {
                 flex-direction: column;
+                align-items: center;
             }
-            .image-container img {
-                max-width: 100%;
-            }
+            .text-box { width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content-wrapper">
         
         <div class="text-box">
-            <h3>Linker Kolom</h3>
-            <p>Hier kun je je eerste tekst invullen. Bijvoorbeeld over de analoge aspecten van je werk.</p>
+            <p><strong>Over de praktijk:</strong> Mijn werk is een voortdurende verkenning van sequenties en "scores". Oorspronkelijk geïnspireerd door de mechanische bewegingen van film en de kinetische energie van de stad.</p>
         </div>
 
         <div class="image-container">
-            <img src="europa.jpg" alt="Europa afbeelding">
+            <img src="europa.jpg" alt="Europa" onerror="this.style.border='2px solid red'; console.log('Image not found');">
         </div>
 
         <div class="text-box">
-            <h3>Rechter Kolom</h3>
-            <p>Hier kun je je tweede tekst invullen. Bijvoorbeeld over de digitale processen of frequenties.</p>
+            <p><strong>Visuele frequenties:</strong> Het vergelijken van geluidsgolven met "beeldfrequenties", waarbij de beweging van een figuur op een scherm met wiskundige nauwkeurigheid wordt behandeld.</p>
         </div>
 
     </div>
