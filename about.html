@@ -3,106 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over Heleen Waterbolk</title>
+    <title>About - Project Waterbolk</title>
     <style>
+        /* Basis instellingen: Wit met zwart */
         body {
-            /* De achtergrond blijft hetzelfde voor consistentie */
-            background-image: url('car.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: #000;
-            color: white;
+            background-color: #fff;
+            color: #000;
             font-family: sans-serif;
             margin: 0;
+            padding: 0;
             line-height: 1.6;
         }
 
+        /* Navigatiemenu (Zelfde structuur als index, maar kleuren omgedraaid) */
         nav {
-            background-color: rgba(51, 51, 51, 0.9);
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
         }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
+        
         nav a {
-            color: white;
+            color: #000;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
         }
 
-        .content-container {
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Content container */
+        .container {
             max-width: 800px;
-            margin: 50px auto;
-            background-color: rgba(0, 0, 0, 0.75); /* Donkere waas voor leesbaarheid */
-            padding: 40px;
-            border-radius: 8px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
-        h1, h2 {
-            border-bottom: 1px solid #fff;
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #000;
             padding-bottom: 10px;
+            margin-bottom: 40px;
         }
 
-        .profile-text {
-            font-size: 1.1em;
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            text-transform: uppercase;
         }
 
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #ccc;
-            text-decoration: none;
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            border-left: 3px solid #000;
+            padding-left: 20px;
+            margin: 40px 0;
             font-style: italic;
+        }
+
+        /* Footer of kleine afsluiting */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #999;
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="theorie/theorie.html">THEORIE</a></li>
-            <li><a href="beweging/beweging.html">BEWEGING</a></li>
-            <li><a href="zwerftocht/zwerftocht.html">ZWERFTOCHT</a></li>
-            <li><a href="mengsel/mengsel.html">MENGSEL</a></li>
-            <li><a href="waarneming/waarneming.html">WAARNEMING</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="content-container">
-        <h1>Over Heleen Waterbolk</h1>
+    <div class="container">
+        <h1>About the Practice</h1>
+
+        <p>Mijn werk is een voortdurende verkenning van sequenties en "scores." Oorspronkelijk geïnspireerd door de mechanische bewegingen van film en de kinetische energie van de stad (van de Mickey Mouse-motieven van New York tot de hitte die van het asfalt trilt), is mijn praktijk geëvolueerd naar een studie over hoe digitale data gematerialiseerd kan worden.</p>
+
+        <p>Met behulp van tools zoals Director en Vectorworks ontwikkel ik animaties waarin figuren bewegen volgens specifieke frequenties. Deze digitale "clusters" en "duurmetingen" worden vervolgens vastgelegd en getransformeerd tot fysieke objecten—watergesneden stalen sculpturen, inkjet-op-canvas "tegen-schilderijen" en gelaagde composities.</p>
+
+        <div class="highlight-box">
+            "De overgang van analoog naar digitaal: het markeren van de verschuiving tussen deze twee werelden via processies van vorm."
+        </div>
+
+        <h2>Belangrijke Thema's</h2>
         
-        <div class="profile-text">
-
-<p>Over de praktijk: Mijn werk is een voortdurende verkenning van sequenties en "scores". Oorspronkelijk geïnspireerd door de mechanische bewegingen van film en de kinetische energie van de stad (van de Mickey Mouse-motieven in New York tot de hitte die van het asfalt trilt), is mijn praktijk geëvolueerd naar een studie over hoe digitale data gematerialiseerd kan worden.</p>
-
-<p>Met behulp van software zoals Director en Vectorworks ontwikkel ik animaties waarin figuren bewegen volgens specifieke frequenties. Deze digitale "clusters" en "duurmetingen" worden vervolgens vastgelegd en getransformeerd tot fysieke objecten: watergesneden stalen sculpturen, inkjet-op-canvas "tegen-schilderijen" en gelaagde composities.</p>
-
-<p>Belangrijke thema's:</p>
-
-<p>De overgang van analoog naar digitaal: Het markeren van de verschuiving tussen deze twee werelden via processies van vorm en "rebus-achtige" composities.</p>
-
-<p>Visuele frequenties: Het vergelijken van geluidsgolven met "beeldfrequenties", waarbij de beweging van een figuur op een scherm met dezelfde wiskundige nauwkeurigheid wordt behandeld als een muzieknoot.</p>
-
-<p>Post-symbolisme: Het ontwikkelen van een visueel alfabet waarin de betekenis enkelvoudig is in plaats van meervoudig — een beweging van "tekens" naar "symbolen" waarbij de materialiteit voorafgaat aan de boodschap.</p>
-
-<p>Gelaagdheid: Het gebruik van het concept van "insluiting" (mise en abyme) om kaders binnen kaders te plaatsen, waardoor diepte ontstaat door herhaling en variatie.</p>
-
-        <a href="index.html" class="back-link">← Terug naar de hoofdpagina</a>
-    </div>
-
-</body>
-</html>
+        <p><strong>Vis
